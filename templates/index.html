@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Status Prediction</title>
+    <link rel="stylesheet" href="./static/index.css">
+</head>
+<body>
+     <div class="nav-bar">
+    <nav aria-label="Primary Navigation">
+    <a href="/" tabindex="0">Home</a>
+    <a href="/about" tabindex="0">About Us</a>
+    <a href="/predict" tabindex="0">Prediction</a>
+  </nav>
+  </div>
+     <h1 id="hero-title">Loan Prediction System</h1>
+      <p>Find out your loan eligibility in moments—just provide your information and let our smart model do the rest.</p>
+      <div class="form-section">
+        <div class="form-sec">
+        <form method="POST">
+        
+        Gender [1:Male, 0:Female]: <input type="text" name="Gender" class="form-bar"><br><br>
+        
+        Married [1:Yes, 0:No]: <input type="text" name="Married" class="form-bar"><br><br>
+        Dependents [1,2,3,4]: <input type="text" name="Dependents" class="form-bar"><br><br>
+        Education [1:Graduate, 0:Not Graduate]: <input type="text" name="Education" class="form-bar"><br><br>
+        Self Employed [1:Yes, 0:No]: <input type="text" name="Self_Employed" class="form-bar"><br><br>
+        Applicant Income: <input type="text" name="ApplicantIncome" class="form-bar" class="form-bar"><br><br>
+        Coapplicant Income: <input type="text" name="CoapplicantIncome" class="form-bar"><br><br>
+        Loan Amount: <input type="text" name="LoanAmount" class="form-bar"><br><br>
+        Loan Amount Term: <input type="text" name="Loan_Amount_Term" class="form-bar"><br><br>
+        Credit History [1:Good, 0:Bad]: <input type="text" name="Credit_History" class="form-bar"><br><br>
+        Property Area [0,1,2]: <input type="text" name="Property_Area" class="form-bar"><br><br>
+    <input type="submit" value="Predict" class="predict-button">
+
+    </form>
+    
+    <h3 class="prediction-text">{{ prediction }}</h3>
+
+    </div>
+    </div>
+    <footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>About Us</h3>
+      <p>We provide accurate and reliable loan prediction services using advanced machine learning models.</p>
+    </div>
+    
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/predict">Prediction</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p>Email: support@loanpredictor.com</p>
+      <p>Phone: +91 98765 43210</p>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>&copy; 2025 Loan Predictor. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

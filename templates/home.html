@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOAN</title>
+    <link rel="stylesheet" href="./static/home.css">
+</head>
+<body>
+    <div class="nav-bar">
+    <nav aria-label="Primary Navigation">
+    <a href="/" tabindex="0">Home</a>
+    <a href="/about" tabindex="0">About Us</a>
+    <a href="/predict" tabindex="0">Prediction</a>
+  </nav>
+  </div>
+    <div class="section-bar">
+    <section class="horizontal-container" role="region" aria-label="Information section with image and action button">
+    <div class="text-content">
+      <h2>Achieve Reliable Loan Predictions with Ease</h2>
+      <p>Discover how our advanced system helps you assess your loan eligibility quickly and accurately. Get insights tailored just for you today.</p>
+      <button class="btn-action" type="button" aria-label="Start loan prediction" onclick="window.location.href= '{{ url_for('predict') }}' ">Start Prediction</button>
+    </div>
+    <div class="image-container">
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/cb2c3d18-8f46-4817-b5c0-286f933e6e66.png" alt="Illustration showing a person using a laptop with charts representing loan prediction" loading="lazy" />
+    </div>
+  </section>
+  </div>
+  <div class="help-section">
+  <h2>Loan Support Highlights</h2> 
+  <div class="help-bar">
+    
+   <section class="image-gallery" aria-label="Gallery of loan prediction related images with descriptions">
+    <article class="image-card" tabindex="0">
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/757b937e-d231-4505-947d-1687d3b7643f.png" alt="Person filling out a loan application on a tablet" loading="lazy" />
+      <div class="caption">BUSINESS PLANNING</div>
+    </article>
+   
+    <article class="image-card" tabindex="0">
+      <img src="./static/STUDY.jpeg" alt="Graph chart showing loan approval predictions over time" loading="lazy" />
+      <div class="caption">HIGHER STUDIES</div>
+      </article>
+
+    <article class="image-card" tabindex="0">
+      <img src="./static/MRG.jpeg" alt="Friendly customer support agent assisting a client" loading="lazy" />
+      <div class="caption">MARRIAGE</div>
+</article>
+
+    <article class="image-card" tabindex="0">
+      <img src="./static/download.jpeg" alt="Security shield icon representing secure data protection" loading="lazy" />
+      <div class="caption">OWN HOME</div>
+</article>
+</section>
+</div>
+</div>
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>About Us</h3>
+      <p>We provide accurate and reliable loan prediction services using advanced machine learning models.</p>
+    </div>
+    
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/predict">Prediction</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p>Email: support@loanpredictor.com</p>
+      <p>Phone: +91 98765 43210</p>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>&copy; 2025 Loan Predictor. All rights reserved.</p>
+  </div>
+</footer>
+
+
+</body>
+</html>
